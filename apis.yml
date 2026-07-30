@@ -1,7 +1,24 @@
 aid: mantari
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mantari.png
 name: Mantari
-description: 'Mantari is a company surfaced as a portfolio company of homebrew and added to the API Evangelist
-  network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Mantari is a weather-intelligence and earth-sensing company building a decision-intelligence
+  platform that fuses a distributed network of sensors with AI to turn environmental data across oceans,
+  skies, and space into mission-critical, actionable intelligence. It initially targets government and
+  defense decision support, with plans to extend into broader economic and commercial applications. As of
+  this profile Mantari publishes a marketing homepage and a careers page but no public API, developer portal,
+  documentation, or SDKs; this record captures its identity plus a live domain-security probe, pending a
+  future developer surface.'
 url: https://raw.githubusercontent.com/api-evangelist/mantari/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Unknown
+- Weather Intelligence
+- Earth Observation
+- Sensors
+- Artificial Intelligence
+- Geospatial
+- Decision Intelligence
+- Defense
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mantari-domain-security.yml
 - type: Website
   url: https://www.mantari.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
